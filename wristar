@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shine App - Mental Health Awareness</title>
+    <style>
+        
+
+        .container {
+            text-align: center;
+            width: 100%; /* Full width for container */
+            height: 100vh; /* Full viewport height */
+            overflow-y: auto; /* Enable vertical scrolling */
+            scroll-snap-type: y mandatory; /* Enable smooth snap scrolling */
+            display: block;
+            scroll-behavior: smooth; /* Smooth scrolling behavior */
+        }
+
+        .abc{
+            background-image: url("https://img.freepik.com/free-photo/closeup-portrait-beautiful-smiling-model-with-afro-curls-hairstyle-dressed-summer-hipster-white-dress_158538-739.jpg?t=st=1727788596~exp=1727792196~hmac=605f25a45878e454a5e0d6ce92ac94c268b8230655b3ba7b4a30b9ac6d3bbcf3&w=826");
+            height: 100vh;
+        }
+        .slide {
+            scroll-snap-align: start;
+            width: 100%;
+            height: 100vh; /* Full viewport height for each slide */
+            padding: 20px;
+            color: #111010; /* Text color for contrast */
+            display: flex; /* Center content */
+            flex-direction: column; /* Stack title and content */
+            justify-content: center; /* Center vertically */
+            align-items: center; /* Center horizontally */
+            position: relative; /* Enable positioning for pseudo-element */
+        }
+
+        /* Curly division effect on the first slide */
+        .slide:first-child {
+            padding-left: 50px; /* Adjust padding for the first slide */
+            background-color: #0d2339; /* Background color for the first slide */
+        }
+        .img1{
+            height:150px;
+            width:120px;
+            border-radius:5px;
+
+        }
+
+        .slide:first-child::before {
+            content: "";
+            position: absolute;
+            left: -30px; /* Positioning for the curly margin */
+            top: 0;
+            height: 100%;
+            width: 30px; /* Width of the curly margin */
+            background-color: #f0f3f5; /* Different color for the curly margin */
+            border-radius: 10px 0 0 10px; /* Rounded corners on the left */
+            box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1); /* Slight shadow for effect */
+        }
+
+        /* Different background colors for each slide */
+        .slide:nth-child(1) { background-color: #ffff; }
+        .slide:nth-child(2) { background-image:url(https://img.freepik.com/free-vector/detailed-mental-health-instagram-post_23-2149071551.jpg?t=st=1727786897~exp=1727790497~hmac=7318955e7e4ae0e5625955e743d5e9b1237e15d9ca95b7125955592bf6d3705e&w=996); }
+        .slide:nth-child(3) { background-color: #ffff; }
+        .slide:nth-child(4) { background-color: #4cad51; }
+        .slide:nth-child(5) { background-image: #ffff; }
+        .slide:nth-child(6) { background-color: #67dac1; }
+
+        h1 { text-align: center; margin-bottom: 30px; }
+        h2 { margin: 0; }
+        p { font-size: 1rem; line-height: 1.6; }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Shine App</h1>
+        <div class="container">
+            <div class="slides-container">
+                <div class="slide abc">
+
+                    <h2>Welcome to Shine App!</h2>
+                    <p>Shine is your companion for mental health awareness and support. With engaging resources, tips, and guidance, we help you navigate your mental wellness journey.</p>
+                </div>
+                <div class="slide">
+                    <h2>Why Shine?</h2>
+                    <p>Shine App offers a safe space to learn about mental health, understand your emotions, and connect with supportive resources.</p>
+                </div>
+                <div class="slide">
+                    <div class="d-flex flex-column">
+                    <img src="https://img.freepik.com/free-photo/woman-laughing-stretching_23-2147648601.jpg?t=st=1727787473~exp=1727791073~hmac=6f6f4cc8b1985ff892f6da86b843705d4fec0e7337a49079d5d34867676ac12f&w=996" class="img1">
+                    <img src="https://img.freepik.com/free-photo/woman-laughing-stretching_23-2147648601.jpg?t=st=1727787473~exp=1727791073~hmac=6f6f4cc8b1985ff892f6da86b843705d4fec0e7337a49079d5d34867676ac12f&w=996" class="img1">
+                    <img src="https://img.freepik.com/free-photo/woman-laughing-stretching_23-2147648601.jpg?t=st=1727787473~exp=1727791073~hmac=6f6f4cc8b1985ff892f6da86b843705d4fec0e7337a49079d5d34867676ac12f&w=996" class="img1">
+                    <img src="https://img.freepik.com/free-photo/woman-laughing-stretching_23-2147648601.jpg?t=st=1727787473~exp=1727791073~hmac=6f6f4cc8b1985ff892f6da86b843705d4fec0e7337a49079d5d34867676ac12f&w=996" class="img1">
+                    <img src="https://img.freepik.com/free-photo/woman-laughing-stretching_23-2147648601.jpg?t=st=1727787473~exp=1727791073~hmac=6f6f4cc8b1985ff892f6da86b843705d4fec0e7337a49079d5d34867676ac12f&w=996" class="img1">
+                    <img src="https://img.freepik.com/free-photo/woman-laughing-stretching_23-2147648601.jpg?t=st=1727787473~exp=1727791073~hmac=6f6f4cc8b1985ff892f6da86b843705d4fec0e7337a49079d5d34867676ac12f&w=996" class="img1">
+                </div>
+            </div>
+                <div class="slide">
+                    <h2>Community Support</h2>
+                    <p>Join our community to share experiences, find encouragement, and connect with others who understand your journey.</p>
+                </div>
+                <div class="slide">
+                    <h2>Get Started</h2>
+                    <p>Begin your journey towards better mental health today. Download the app and start exploring!</p>
+                </div>
+                <div class="slide">
+                    <h2>Contact Us</h2>
+                    <p>If you have any questions or need assistance, reach out to our support team for help.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // No scrolling buttons are needed, as scrolling is done via touch or scroll wheel
+    </script>
+</body>
+</html>
+
